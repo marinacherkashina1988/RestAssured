@@ -14,22 +14,21 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-java</artifactId>
-            <version>7.18.0</version>
-        </dependency>
+   <dependencies>
+          <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+         <dependency>
+             <groupId>io.cucumber</groupId>
+             <artifactId>cucumber-java</artifactId>
+             <version>7.18.0</version>
+         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
-        <dependency>
-            <groupId>io.cucumber</groupId>
-            <artifactId>cucumber-junit</artifactId>
-            <version>7.18.0</version>
-            <scope>test</scope>
-        </dependency>
-
+         <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+         <dependency>
+             <groupId>io.cucumber</groupId>
+             <artifactId>cucumber-junit</artifactId>
+             <version>7.18.0</version>
+             <scope>test</scope>
+         </dependency>
         <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
         <dependency>
             <groupId>org.seleniumhq.selenium</groupId>
@@ -57,13 +56,6 @@
             <version>8.3.0</version>
         </dependency>
 
-        <!-- https://mvnrepository.com/artifact/com.mysql/mysql-connector-j -->
-        <dependency>
-            <groupId>com.mysql</groupId>
-            <artifactId>mysql-connector-j</artifactId>
-            <version>8.3.0</version>
-        </dependency>
-
         <!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
         <dependency>
             <groupId>io.rest-assured</groupId>
@@ -71,7 +63,6 @@
             <version>5.4.0</version>
             <scope>test</scope>
         </dependency>
-
 
 
     </dependencies>
@@ -84,7 +75,7 @@
                 <version>3.5.1</version>
                 <configuration>
                     <includes>
-                        <include>**/*TestRunner.java</include>
+                        <include>**/*introduction.TestRunner.java</include>
                     </includes>
                 </configuration>
             </plugin>

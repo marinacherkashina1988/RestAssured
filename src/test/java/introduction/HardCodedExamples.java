@@ -23,7 +23,7 @@ public class HardCodedExamples {
     public void A_createAnEmployee (){
        request = given().
                header("Content-Type", "application/json").
-               header("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzE0MjUzMDUsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTczMTQ2ODUwNSwidXNlcklkIjoiODMifQ.7-lNh1SZaourIfs8gD-R8qEaW9m-U0kxXJNuzDuNSx4").
+               header("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzE5ODIxOTcsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTczMjAyNTM5NywidXNlcklkIjoiNjk3OSJ9.JX4DBfBkHFp3Y_PgptHFxGyOENx-hk1Ywt3zvZgNPto").
                body("{\n" +
                 "  \"emp_firstname\": \"Christina\",\n" +
                 "  \"emp_lastname\": \"Jason\",\n" +
@@ -48,7 +48,7 @@ public class HardCodedExamples {
     public void B_getEmployee(){
         request = given().
                 header("Content-Type", "application/json").
-                header("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzE0MjUzMDUsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTczMTQ2ODUwNSwidXNlcklkIjoiODMifQ.7-lNh1SZaourIfs8gD-R8qEaW9m-U0kxXJNuzDuNSx4").
+                header("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzE5ODIxOTcsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTczMjAyNTM5NywidXNlcklkIjoiNjk3OSJ9.JX4DBfBkHFp3Y_PgptHFxGyOENx-hk1Ywt3zvZgNPto").
                 queryParam("employee_id", employee_id);
 
         response = request.when().get("/getOneEmployee.php");
@@ -59,7 +59,7 @@ public class HardCodedExamples {
     public void C_updateEmployee(){
         request=given().
                 header("Content-Type", "application/json").
-                header("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzE0MjUzMDUsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTczMTQ2ODUwNSwidXNlcklkIjoiODMifQ.7-lNh1SZaourIfs8gD-R8qEaW9m-U0kxXJNuzDuNSx4").
+                header("Authorization", "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3MzE5ODIxOTcsImlzcyI6ImxvY2FsaG9zdCIsImV4cCI6MTczMjAyNTM5NywidXNlcklkIjoiNjk3OSJ9.JX4DBfBkHFp3Y_PgptHFxGyOENx-hk1Ywt3zvZgNPto").
                 queryParam("employee_id", employee_id).
                 body("{\n" +
                         "  \"employee_id\": \""+employee_id+"\",\n" +
